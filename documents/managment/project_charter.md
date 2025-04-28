@@ -6,7 +6,7 @@
 
 ### Purpose
 
-Game development is the most powerful creative field to me, however, learning it is a long process due to fragmented learning, overwhelming tools, and the lack of engaging resources. 
+Game development is the most powerful creative field to me, however, learning it is a long process due to fragmented learning, overwhelming amount of tools, and the lack of engaging resources. 
 
 Traditional tutorials often focus on isolated topics, lack interactivity, and most of the time doesn't allow a creative process.
 
@@ -49,7 +49,12 @@ Release a playable prototype and progress toward a polished, full version.
 
 | Name                               | Type                | Deadline     |
 | ---------------------------------- | ------------------- | ------------ |
-| | | |
+| Functional Specification | Documentation | 01/08/2025 |
+| Final MockUp | Design Representation | 01/08/2025 |
+| Technical Specification | Documentation | 17/11/2025 |
+| Test Plan | Documentation | 09/03/2026 |
+| Demo Version | Program | 19/04/2027|
+| Monthly Reports | Documentation | every first week of the month|
 
 ### Project Scope
 
@@ -77,9 +82,25 @@ Online multiplayer or co-op functionality
 VR/AR platform development
 In-game purchases or monetization systems
 
+
+### Stakeholders
+
+| Stakeholders | Roles |
+|-|-|
+|Mattéo LEFIN|Main creator, designer, and decision-maker. Responsible for project vision and execution.|
+|Players|The audience who will learn, create, and experience the story. Their feedback and engagement are crucial.|
+|Possible Educational Partners|Schools, or educators who might use the game as a learning tool.|
+
 ### Projects Milestones
 
 | Milestone                | Deadline  |
 | ------------------------ | --------- |
-| | |
+| Functional Specification and Mockup | 01/08/2025 |
+| Technical Specifications | 17/11/2025 |
+| Test Plan| 09/03/2026|
+| Game Editor Core Functionality| 20/04/2026|
+| Story Line | 27/07/2026|
+| Mentor system| 21/12/2026|
+| First Game Genre (Platformer) developed| 22/04/2027 |
+| Demo Version | 19/04/2027 |
 
