@@ -19,7 +19,7 @@
       - [E. Story Integration](#e-story-integration)
       - [F. Reactions to Player Choices](#f-reactions-to-player-choices)
     - [2. Editor Features](#2-editor-features)
-      - [A. Editor Overview (NEW section — just a few sentences)](#a-editor-overview-new-section--just-a-few-sentences)
+      - [A. Editor Overview](#a-editor-overview)
       - [B. Enter Editor Mode](#b-enter-editor-mode)
       - [C. Main Editor Page](#c-main-editor-page)
       - [D. Toolbar](#d-toolbar)
@@ -166,7 +166,7 @@ The game reacts to how players solve challenges—following mentor guidance or u
 ### 2. Editor Features
 
 
-#### A. Editor Overview (NEW section — just a few sentences)
+#### A. Editor Overview
 
 The in-game editor is the player's main tool for creating and modifying the broken games. It mimics a simplified game engine interface to help new devs learn transferable skills.
 
@@ -178,7 +178,13 @@ The editor is supposed to look like game engine editor to make sure the new game
 
 #### C. Main Editor Page
 
-When you enter in the editor, the first page that shows up will show you the game file tree on the left, the toolbar on the top and the asset inspector.
+When you enter in the editor, the first page that shows up will show you different sections.
+- The game file tree and the mentor on the left. 
+- A toolbar at the top.
+- An asset inspector on the right.
+
+
+At the top of the file tree we have a buttons, these buttons toggles the visibility of the different sections. Doing this allows a larger visibility of the game.
 
 #### D. Toolbar
 
@@ -205,7 +211,7 @@ In the middle, you will be able to draw the assets, the different drawing tool a
 - A color picker, allowing to pick a color from a drawn pixel.
 - A zone selector, allowing you to draw only in this specific zone, the selector has different modes:
 
-  - Baguette mode : selecting the clicked pixel and all the other around that has the same color.
+  - "Magic Wand" mode : selecting the clicked pixel and all the other around that has the same color.
   - Add mode: add a selected part to the selection zone.
   - sub mode: subtract a selected part from the selection zone.
 
