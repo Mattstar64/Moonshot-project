@@ -36,7 +36,7 @@ The overall project organisation has been structured for coordination between fo
 | Business Model | 100% |
 | Functional Specification | 0% |
 | Mock Up| 0%|
-| Techno;ogy Research| 0% |
+| Technology Research| 0% |
 | Technical Specifications | 0%|
 | Test Plan| 0%|
 | Game Editor Core Functionality| 0%|
