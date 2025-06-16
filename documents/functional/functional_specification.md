@@ -30,6 +30,10 @@
       - [I. Testing/Preview Mode](#i-testingpreview-mode)
       - [J. Undo Feature and Autosave](#j-undo-feature-and-autosave)
     - [3. Mentor System](#3-mentor-system)
+      - [A. Design](#a-design)
+      - [B. How to Access mentor option](#b-how-to-access-mentor-option)
+      - [C. Suggestion System](#c-suggestion-system)
+      - [D. Editor Page Specific Functionalities](#d-editor-page-specific-functionalities)
     - [4. Chapter Progression](#4-chapter-progression)
       - [A. Chapter Structure](#a-chapter-structure)
       - [B. Progression Flow](#b-progression-flow)
@@ -37,11 +41,18 @@
       - [D. Chapter Order](#d-chapter-order)
       - [E. Player Influence Chapter Progression](#e-player-influence-chapter-progression)
     - [5. Game Repairs](#5-game-repairs)
-    - [6. Objectives \& Freedom](#6-objectives--freedom)
-    - [7. Audio and Sound Design](#7-audio-and-sound-design)
-    - [8. Saving system](#8-saving-system)
-    - [9. UX/UI](#9-uxui)
-    - [10. 3D/2D](#10-3d2d)
+      - [A. Find an issue](#a-find-an-issue)
+      - [B. Modification](#b-modification)
+    - [6. Audio and Sound Design](#6-audio-and-sound-design)
+      - [A. Integrated Music and Sound Effects](#a-integrated-music-and-sound-effects)
+      - [B. Broken or Missing Audio in Chapters](#b-broken-or-missing-audio-in-chapters)
+    - [7. Saving system](#7-saving-system)
+      - [A. Access Saves](#a-access-saves)
+      - [B. Auto Saving](#b-auto-saving)
+      - [C. Manual Saving](#c-manual-saving)
+      - [D. Save Behavior Options](#d-save-behavior-options)
+    - [8. UX/UI](#8-uxui)
+    - [9. 3D/2D](#9-3d2d)
   - [III. Non Functional Requirement](#iii-non-functional-requirement)
     - [1. Performances](#1-performances)
     - [2. Technical Requirements](#2-technical-requirements)
@@ -160,7 +171,7 @@ The different gameplay mechanic and features are closely tied to the storyline a
 
 #### F. Reactions to Player Choices
 
-The game reacts to how players solve challenges—following mentor guidance or using creative workarounds. These choices influence dialogue, world changes, and the ending.
+The game reacts to how players solve challenges—following mentor suggestions. These choices influence dialogue, world changes, and the ending.
 
 
 ### 2. Editor Features
@@ -249,6 +260,93 @@ If players does a mistake they can undo their mistake by pressing the undo butto
 
 ### 3. Mentor System
 
+#### A. Design
+
+The mentor will be the player guidance into the basics of game development, meaning it must be enjoyable to listen to their suggestions. However, the design must still connected to the storyline.
+
+The main criteria design are:
+
+- **Form**:
+  
+  The mentor should resemble a robotic or AI-like character, reinforcing the idea that it’s part of the editor system itself, almost like an embedded assistant.
+
+- **Aesthetic**:
+
+  Its appearance should be visually cute and inviting to encourage player interaction and attentiveness, especially for younger or newer users. The design should spark curiosity without feeling childish.
+
+
+- **Tone & Behavior**:
+
+  While the mentor is visually appealing, it should maintain a serious and competent tone when explaining concepts, offering help, or reacting to player decisions. It may also express light humor or frustration when ignored, creating personality without becoming annoying.
+
+- **Facial Expressions**:
+
+  The mentor will display a range of facial expressions (e.g., happy, thoughtful, surprised, concerned) to make it more human-like, emotionally engaging, and responsive to the player's journey.
+
+- **Dialogue Integration**:
+
+  All lines delivered by the mentor must feel natural and in-universe—embedded with narrative relevance, not just mechanical explanations. The mentor may comment on the state of the game world or reflect on the player’s decisions, tying into the story’s emotional arc.
+
+#### B. How to Access mentor option
+
+To access the suggestions and different mentor feature the user will click on the mentor button on bottom left of every editor pages.
+
+![mentor button image]()
+
+#### C. Suggestion System
+
+After an issue has been discovered, the mentor button will glow, indicating suggestions are available.
+
+The mentor will do a short and sharp resume on the issue and will propose multiple solutions which the user will choose so the mentor can guide him on what to do.
+
+![Mentor suggestion]()
+
+The user can always ask for a reminder of what the current issue and suggestion
+
+#### D. Editor Page Specific Functionalities
+
+For each editor mode, the mentor will offer contextual support specific to that page’s functionality.
+
+- **Main Page** :
+
+  - Recap the current objective or issue the player is trying to solve.
+
+  - Offer a quick overview of what mode or asset the player should focus on.
+
+  - Comment on the structure or clarity of the project file tree.
+
+  - Help new users understand how to switch between editor modes and manage assets.
+
+- **Drawing Page** :
+
+  - Suggest color palettes based on the asset's context (e.g., UI, enemy, background).
+
+  - Explain layering, animation frames, and pixel density best practices.
+
+  - Provide tips on readability (silhouette clarity, shape recognition, etc.).
+
+  - Help the player understand how their visual choices affect gameplay feel.
+
+- **Music Page**:
+
+  - Provide instrument combos that match the genre or mood of the current chapter.
+
+  - Explain basic music theory concepts (e.g., rhythm, melody, harmony) in simplified terms.
+
+  - Recommend loop structures and timing formats for background music or sound effects.
+
+  - Suggest mood-based instruments (e.g., minor keys for suspense, upbeat chords for platforming).
+
+- **Coding Page**:
+
+  - Offer code snippets or logic templates based on what the player is trying to fix or build (e.g., movement, collisions, triggers).
+
+  - Detect and explain common logic errors (e.g., wrong variable types, infinite loops).
+
+  - Explain how each action affects the game state, using visual metaphors or animation where possible.
+
+  - Help players link code to assets and understand function flow (e.g., start → update → result).
+
 ### 4. Chapter Progression
 
 #### A. Chapter Structure
@@ -302,15 +400,72 @@ Depending of the  different choices that the player selected, chapters will be s
 
 ### 5. Game Repairs
 
-### 6. Objectives & Freedom 
+#### A. Find an issue
 
-### 7. Audio and Sound Design
+Game repairs are a core mechanic of progression. Players uncover issues by actively playing the broken game within each chapter. These issues can be:
 
-### 8. Saving system
+- Technical (e.g., a character doesn’t jump)
+- Visual/audio inconsistencies (e.g., missing sprites or sound/music...)
 
-### 9. UX/UI
 
-### 10. 3D/2D
+#### B. Modification
+
+After an issue is discovered, players are encouraged to enter the editor and apply their own fix using the tools available (drawing, coding, music, etc.).
+
+For example:
+
+- In a platformer chapter, a character may not jump because the input isn’t linked correctly. The player enters coding mode, selects the character asset, and updates the jump function with help from the mentor.
+  
+- In an RPG chapter, a quest may be present in the code but not properly signposted in the UI. The player may need to modify the level design or add dialogue cues to help guide the player more clearly.
+
+### 6. Audio and Sound Design
+
+#### A. Integrated Music and Sound Effects
+
+Not all music and sound elements in the game are editable by the player. Certain tracks such as the main menu theme, cutscene music, and other sounds tied closely to narrative moments are predefined and locked, ensuring consistency in tone and story progression.
+
+These non-editable sounds serve as narrative anchors and help maintain emotional pacing during key story events.
+
+#### B. Broken or Missing Audio in Chapters
+
+Throughout the game’s chapters, players will frequently encounter broken, glitched, or missing sound effects and music tracks. These audio issues are often tied to gameplay or environmental immersion.
+
+Examples include:
+
+- A boss battle with no music, killing the tension
+
+- A platformer where jump sounds are missing or mismatched
+
+Fixing audio issues not only restores immersion, it reinforces an understanding of how sound supports game design, emotion, and feedback.
+
+### 7. Saving system
+
+#### A. Access Saves
+
+Saves will be available on the first screen when you launch the game when you press the "continue" button. The player will access 6 save slot, allowing multiple parallel playthroughs or user profiles.
+
+#### B. Auto Saving
+
+The game will automatically save progress after key events, such as:
+- Successfully fixing a game issue.
+- Completing a chapter.
+- Major story decisions that affect progression.
+This ensures minimal loss of progress in case of crashes or user exit.
+
+#### C. Manual Saving
+
+When quitting the game, it will ask if you want to save before. It allows the possibility to restart from the last thing saved. This functionality allows for players if they done something they didn't like in the end to go back from where they finished a problem.
+
+#### D. Save Behavior Options
+
+Players can overwrite existing saves or create new save slots.
+Saves will include metadata such as:
+- Chapter number
+- Time played
+
+### 8. UX/UI
+
+### 9. 3D/2D
 
 
 ## III. Non Functional Requirement
