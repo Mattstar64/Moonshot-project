@@ -52,16 +52,53 @@
       - [C. Manual Saving](#c-manual-saving)
       - [D. Save Behavior Options](#d-save-behavior-options)
     - [8. UX/UI](#8-uxui)
-    - [9. 3D/2D](#9-3d2d)
+      - [A. User Interface Design](#a-user-interface-design)
+      - [B. Accessibility Considerations](#b-accessibility-considerations)
   - [III. Non Functional Requirement](#iii-non-functional-requirement)
     - [1. Performances](#1-performances)
+      - [A. Framerate and Responsiveness](#a-framerate-and-responsiveness)
+      - [B. Platform-Specific Adjustments](#b-platform-specific-adjustments)
     - [2. Technical Requirements](#2-technical-requirements)
 
 
 ## Glossary
-|Term | Definition|
-|-----|-----------|
-| 
+| Term | Definition |
+|------|------------|
+| Game Development | The process of creating a video game, including design, programming, art, sound, and testing. |
+| Genre | A category of video game with shared gameplay features or mechanics (e.g., platformer, RPG, FPS). |
+| Chapter | A structured segment of the game, usually focused on a specific genre and learning objective. |
+| Game Loop | A gameplay cycle where the player plays, identifies issues, edits the game, and tests the result. |
+| Editor Mode | A customizable in-game interface that allows players to modify or create game elements. |
+| File Tree | A visual structure that displays all project files and assets in a hierarchy. |
+| Asset | Any element used in a game, such as a sprite, script, sound file, or object. |
+| Inspector | A panel within the editor used to view and modify the properties of a selected asset. |
+| Toolbar | A top-level UI element that provides tools like play, undo, mode switching, and save. |
+| Drawing Mode | A feature in the editor that allows players to draw or edit 2D visual assets. |
+| Pixel Art | A form of digital art created through the placement of individual pixels. |
+| Layer | A visual stack within drawing mode that separates elements for animation or visibility. |
+| Magic Wand | A selection tool that chooses an area of similar colored pixels in drawing mode. |
+| Music Mode | A feature in the editor that allows players to create or modify game music and sound. |
+| Instrument Mixer | A tool that allows players to adjust audio levels and combine instruments. |
+| Coding Mode | A feature in the editor that allows players to write or modify game logic and scripts. |
+| Code Snippet | A reusable block of code that performs a specific task, used as templates for beginners. |
+| Mockup | A visual prototype of a UI or game screen, often created in tools like Figma. |
+| Preview Mode | A function that lets players test their modifications in real time. |
+| Autosave | A feature that automatically saves player progress after major actions or decisions. |
+| Undo/Redo | Editor features allowing players to reverse or restore recent changes. |
+| Mentor | An AI character that assists and teaches the player throughout the game. |
+| AI (Artificial Intelligence) | Logic used to simulate intelligent behavior in non-player characters or game systems. |
+| Suggestion System | A mentor feature that provides guidance or solutions based on current game issues. |
+| Chapter Progression | The learning and narrative structure in which new concepts and genres are introduced over time. |
+| Game Repair | The act of identifying and fixing broken mechanics, visuals, or audio in-game. |
+| Sprite | A 2D image or animated object in the game world. |
+| Hitbox | The invisible boundary used to detect collisions between objects. |
+| Sound Effect | A brief audio cue that reinforces player actions or events in the game. |
+| Music Loop | A repeating sequence used in background music design. |
+| Save Slot | A dedicated slot for storing a player's progress or profile. |
+| Performance Profile | Preset configurations that adjust game visuals and effects based on hardware capability. |
+| FPS (Frames per Second) | The number of times the game updates its visuals every second; 60 FPS is the performance target. |
+| Accessibility | The practice of designing games that are usable by people of all abilities and experience levels. |
+| UI (User Interface) | Visual components that help players interact with the game or editor (buttons, panels, menus). |
 
 ## I. Introduction
 
@@ -465,13 +502,43 @@ Saves will include metadata such as:
 
 ### 8. UX/UI
 
-### 9. 3D/2D
+#### A. User Interface Design
 
+The user interface of GameDev the Game must remain clear, intuitive, and consistent across all game and editor modes. Since the target audience includes beginners and non-technical users, usability is a top priority. Key design principles include:
+
+- Minimal visual clutter to avoid overwhelming new players
+- Consistent layout across chapters and editor pages
+- Toggleable UI elements (file tree, mentor panel, etc.) to give users control over their workspace
+- Easily readable fonts and clear color contrast
+
+#### B. Accessibility Considerations
+
+To ensure the game is inclusive and accessible:
+
+- Tooltips and context sensitive explanations will be shown when hovering over buttons or unfamiliar features
+
+- Keyboard navigation and shortcut support will be implemented, especially for editor workflows
 
 ## III. Non Functional Requirement
 
 ### 1. Performances
 
+#### A. Framerate and Responsiveness
+
+The game aims to maintain a stable 60 frame per seconds in all scenes, including:
+- Gameplay
+- Editor modes
+- Inputs (movement, drawing, code editing) must remain responsive even on minimal hardware
+- Autosave and undo features are designed to not interrupt flow or freeze UI
+
+#### B. Platform-Specific Adjustments
+
+Performance profiles may be implemented for:
+- Low: Basic visuals, no post-processing, static background layers
+
+- Medium: Default
+
+- High: Optional aesthetic effects if player PC allows (parallax, ambient particles, etc.)
 
 ### 2. Technical Requirements
 
